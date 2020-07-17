@@ -1,0 +1,110 @@
+/* Page layout and global properties*/
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+    line-height: 35px;
+}
+/* Main layout*/
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+/*Google logo properties*/
+.logo{
+    width: 300px;
+    opacity: .8;
+    margin: 7em 0 -2.5em;
+    z-index: -1;
+}
+/*Search bar layout and properties*/
+.text-form{
+    display: flex;
+    justify-content: space-between;
+    border: rgba(0, 0, 0, 0.15) solid 1px;
+    padding: .2em 1em;
+    border-radius: 22px;
+    width: 460px;
+}
+.text-search{
+    width: 85%;
+    border: hidden;
+}
+/*Search button layout*/
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+/*Search button properties*/
+.submit{
+    font-size: 14px;
+    height: 35px;
+    border: none;
+    margin: 2.5em 5px 0;
+    padding: 0px 14px;
+    border-radius: 4px;
+    opacity: .7;
+}
+/*Search bar & button selectors*/
+.text-form:hover, .submit:hover{
+    border: rgba(0, 0, 0, 0.2) solid 1px;
+    box-shadow: 2px 2px rgba(0,0,0,.15); 
+}
+/*Header & footer layout*/
+header,footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}  
+.l-header, .l-footer{
+    margin-right: auto;
+    padding: 0 .75em;
+}
+.r-header, .r-footer{
+    padding: 0 1.25em;
+}
+/*Footer properties*/
+footer{
+    background-color: rgba(128, 128, 128, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    opacity: .7;
+    position: fixed;
+    bottom: 0;
+}
+/*Navigation link properties*/
+.nav-item{
+    color: black;
+    text-decoration: none;
+    margin: 0 .5em;
+}
+/*Navigation link selector*/
+.nav-item:hover{
+    text-decoration: underline;
+}
+/*Icon properties*/
+i{
+    color: rgba(0, 0, 0, 0.438);
+    position: relative;
+    top: 7px;
+}
+/*Apps icon selector*/
+#apps:hover{
+    color: black;
+}
+/*Sign-in button properties*/
+#sign-in{
+    text-decoration: none;
+    background-color: #4387fd;
+    color: white;
+    border-radius: 3px;
+    padding: .6em .9em;
+    margin-left: .5em;
+}
+/*Disabling default focus selector*/
+:focus{
+    outline: none;
+}
+
